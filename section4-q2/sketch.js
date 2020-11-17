@@ -23,7 +23,7 @@ function star(cx, cy, r, angle){
 function draw(){
   background(0);
   noStroke();
-  fill(255, 0, 0);
+  fill(52, 164, 235);
   star(x, y, 50, z);
   x -= 2;
   y += 2;
