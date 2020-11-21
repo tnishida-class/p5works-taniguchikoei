@@ -17,12 +17,27 @@ function setup(){
   x2 = width/2 + 500;
   w2 = 300;
   h2 = 250;
-  x3 = width/2 + 1000;
+  x3 = width/2 + 900;
   h3 = 450;
   w3 = 250;
   x4 = width/2 + 1700;
   h4 = 200;
   w4 = 220;
+  x5 = width/2 + 100;
+  h5 = 420;
+  w5 = 150;
+  x6 = width/2 + 280;
+  h6 = 290;
+  w6 = 190;
+  x7 = width/2 + 1200;
+  h7 = 220;
+  w7 = 150;
+  x8 = width/2 + 1400;
+  h8 = 400;
+  w8 = 200;
+  x9 = width/2 - 200;
+  h9 = 150;
+  w9 = 150;
 }
 
 function windowResized(){
@@ -61,6 +76,21 @@ function draw(){
     star(u, 240, 10, 0);
   }
 
+    fill(225, 225, 0);
+  for(v=150; v<width; v += 210){
+    star(v, 300, 10, 0);
+  }
+
+    fill(225, 225, 0);
+  for(w=220; w<width; w += 210){
+    star(w, 330, 10, 0);
+  }
+
+    fill(225, 225, 0);
+  for(c=80; c<width; c += 210){
+    star(c, 370, 10, 0);
+  }
+
   noStroke();
   fill(225, 255, 0);
   star(x, y, 15, z);
@@ -91,6 +121,31 @@ function draw(){
   x4 -= 1;
   if(mouseIsPressed){x4 -= 2.5};
   if(x4+1500<0){x4 = width};
+
+  building(x5, w5, h5);
+  x5 -= 1;
+  if(mouseIsPressed){x5 -= 2.5};
+  if(x5+1500<0){x5 = width};
+
+  building(x6, w6, h6);
+  x6 -= 1;
+  if(mouseIsPressed){x6 -= 2.5};
+  if(x6+1500<0){x6 = width};
+
+  building(x7, w7, h7);
+  x7 -= 1;
+  if(mouseIsPressed){x7 -= 2.5};
+  if(x7+1500<0){x7 = width};
+
+  building(x8, w8, h8);
+  x8 -= 1;
+  if(mouseIsPressed){x8 -= 2.5};
+  if(x8+1500<0){x8 = width};
+
+  building(x9, w9, h9);
+  x9 -= 1;
+  if(mouseIsPressed){x9 -= 2.5};
+  if(x9+1500<0){x9 = width};
 
   line(0, height*68/80+25, width, height*68/80+25);
   fill(0);
