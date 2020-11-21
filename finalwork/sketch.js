@@ -9,8 +9,8 @@ function setup(){
   z = 0;
   a = width+150;
   b = height/2;
-  e = 70;
-  f = 500;
+  e = width/2;
+  f = width;
   x1 = width/2;
   w1 = 80;
   h1 = 300;
@@ -182,7 +182,7 @@ function draw(){
     push();
   translate(width*20/80, height*70/80);  //表示したい場所へ移動
   rotate(radians(angle));       //原点中心の回転
-  fill(237, 216, 213);
+  fill(230, 153, 142);
   ellipse(0, 0, 50);
   fill (0);
   rect(-9, -13, 1, 6);
