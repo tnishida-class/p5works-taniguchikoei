@@ -38,6 +38,9 @@ function setup(){
   x9 = width/2 - 200;
   h9 = 150;
   w9 = 150;
+  x10 = width/2 - 450;
+  h10 = 330;
+  w10 = 220;
 }
 
 function windowResized(){
@@ -146,6 +149,11 @@ function draw(){
   x9 -= 1;
   if(mouseIsPressed){x9 -= 2.5};
   if(x9+1500<0){x9 = width};
+
+  building(x10, w10, h10);
+  x10 -= 1;
+  if(mouseIsPressed){x10 -= 2.5};
+  if(x10+1500<0){x10 = width};
 
   line(0, height*68/80+25, width, height*68/80+25);
   fill(0);
